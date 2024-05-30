@@ -1,0 +1,239 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container Styles */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+.start{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.start #p1{
+    margin-top: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#h2{
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 30px; 
+    font-size: large;
+}
+
+.main .card{
+    background-color: #16479b;
+    margin-top: 20px;
+}
+
+.a6 #count{
+    color: antiquewhite;
+}
+
+.a7 #info{
+    color: antiquewhite;
+}
+
+.a7 .card p{
+    margin-top: 15px;
+}
+
+/* Card Styles */
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.card h1{
+    font: bold ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+#para{
+    color: white;
+}
+
+#toggleText{
+    color:white;
+}
+
+.a3 h1{
+    color: white;
+}
+
+.a5 label{
+    color: whitesmoke;
+}
+
+
+/* Custom toggle button styles */
+.toggle-container {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+    background-color: #2196F3;
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+}
+
+
+
+/* Button Styles */
+
+.b1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.b1:hover {
+    /* background-color: #86cd02; */
+    background-color: bisque;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* /* button[type="submit"] {
+    background-color: bisque;
+    color: black;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+} */
+
+/* Dropdown Styles */
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* List Item Styles */
+li.colorItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.submain3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+}
+
+.submain3 .card{
+    background-color: #16479b;
+}
+
+.end{
+    border: 1px solid black;
+    background-color: black;
+    text-align: center;
+}
+
+.end #h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: 15px;
+}
